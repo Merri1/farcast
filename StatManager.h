@@ -5,7 +5,6 @@
 #ifndef FARCAST_STATMANAGER_H
 #define FARCAST_STATMANAGER_H
 
-#include "GameStatistics.h"
 #include "include/json.hpp"
 
 class StatManager {

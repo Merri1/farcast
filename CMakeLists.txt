@@ -3,4 +3,4 @@ project(farcast)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(farcast main.cpp StatManager.cpp StatManager.h GameStatistics.cpp GameStatistics.h include/httplib.h)
+add_executable(farcast main.cpp StatManager.cpp StatManager.h include/httplib.h)
