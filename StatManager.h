@@ -63,22 +63,22 @@ public:
 
     // Nlohmann macros to map GameStat and PlayerStat structs fields to JSON objects
     NLOHMANN_DEFINE_TYPE_INTRUSIVE(GameStat,
-                                   id,
-                                   winCount,
-                                   lossCount,
-                                   totalPlayTime,
-                                   totalSessions,
-                                   totalPlayerCount
-    );
+                                       id,
+                                       winCount,
+                                       lossCount,
+                                       totalPlayTime,
+                                       totalSessions,
+                                       totalPlayerCount
+                                   );
 
     NLOHMANN_DEFINE_TYPE_INTRUSIVE(PlayerStat,
-                                   id,
-                                   killCount,
-                                   deathCount,
-                                   totalScore,
-                                   totalPlayTime,
-                                   totalSessions
-    );
+                                       id,
+                                       killCount,
+                                       deathCount,
+                                       totalScore,
+                                       totalPlayTime,
+                                       totalSessions
+                                   );
 
     // Instance of GameStat and PlayerStat structs for updaing and reading data at runtime
     StatManager::GameStat gameStat{};

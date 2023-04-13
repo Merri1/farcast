@@ -2,14 +2,14 @@
 #include "StatManager.h"
 
 int main() {
-//    StatManager statManager;
-//
-//    statManager.setPlayerName("zaphod");
-//
-//    statManager.getStatsFromDatabase();
-//
-//    std::cout << statManager.playerStat.getDeathCount() << std::endl;
-//
+    StatManager statManager;
+
+    statManager.setPlayerName("zaphod");
+
+    //statManager.getStatsFromDatabase();
+
+    std::cout << statManager.playerStat.getDeathCount() << std::endl;
+
 //    statManager.playerStat.updateDeathCount(32);
 //    statManager.playerStat.updateHighScore(42);
 //    statManager.playerStat.updateKillCount(42);
