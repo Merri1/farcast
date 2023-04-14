@@ -1,7 +1,3 @@
-//
-// Created by merri on 20/03/23.
-//
-
 #ifndef FARCAST_STATMANAGER_H
 #define FARCAST_STATMANAGER_H
 
@@ -11,8 +7,8 @@
 class StatManager {
 public:
     StatManager();
-    void setApiUrl(std::string url);
-    void setGameToken(std::string token);
+    void init(std::string gameToken);
+    void init(std::string gameToken, std::string apiUrl);
     void writeStatsToDatabase();
     void getStatsFromDatabase();
     void setPlayerName(std::string playerName);

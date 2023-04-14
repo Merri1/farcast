@@ -1,12 +1,10 @@
-//
-// Created by merri on 20/03/23.
-//
-//#define CPPHTTPLIB_OPENSSL_SUPPORT
 #include <iostream>
 #include "StatManager.h"
 
 using namespace std;
 
+// Default API URL
+const string defaultApiUrl = "http://localhost:8080";
 // Endpoints that will always be the same
 const string gameStatEndpoint = "/game-stats/";
 const string gameStatUpdateEndpoint = "/game-stats/update/";
@@ -15,14 +13,16 @@ const string playerStatUpdateEndpoint = "/player-stats/update/";
 
 StatManager::StatManager() { }
 
-// Set the web address for the server
-void StatManager::setApiUrl(std::string url) {
-    this->apiUrl = url;
+// Initialise the game token
+void StatManager::init(string gameToken){
+    this->gameToken = gameToken;
+    this->apiUrl = defaultApiUrl;
 }
 
-// Set the unique game token
-void StatManager::setGameToken(std::string token) {
-    this->gameToken = token;
+// Initialise the game token and server URL
+void StatManager::init(string gameToken, string apiUrl){
+    this->gameToken = gameToken;
+    this->apiUrl = apiUrl;
 }
 
 // Set the current player name
