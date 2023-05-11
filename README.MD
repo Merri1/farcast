@@ -55,6 +55,7 @@ YourProjectRoot
 
 #### Retrieving stats from server
 Ideally you will take in the player name at the start of your game. This library will pull overall Game stats and also Player Stats for a specific player name from the backend server.
+
 2. Before retrieving data set the current players name:
 
        statManager.setPlayerName("Merri");
